@@ -1,0 +1,156 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;box-sizing: border-box;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    gap: 50px;
+}
+.menu_link {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu_link:hover {
+    color: rgb(255, 106, 0);
+    border-bottom: 2px solid rgb(255, 106, 0);
+}
+.hero {
+    padding: 150px 0px;
+    background-color: black;
+}
+.title span{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 106, 0);
+    text-align: center;
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.subtitle {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+.about {
+    padding: 80px 0;
+}
+.info {
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-bottom: 30px; 
+    font-weight: bold;
+}
+.info_subtitle {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding-bottom: 30px; 
+}
+.teacher {
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 10px 12px 12px 5px rgba(0, 0, 0, 0.35);
+    transition: 0.5s all;
+}
+.teacher:hover{
+    transform: scale(1.1);
+}
+.card {
+    max-width: 300px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 106, 0);
+    padding: 50px;
+}
+.icon {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.card_title {
+    color: rgb(255, 106, 0);
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.card_descr {
+    text-align: center;
+    font-size: 20px;
+}
+.achievements_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin-bottom: 40px;
+}
+footer {
+    padding: 50px 0;
+    background-color: black;
+}
+.footer_block {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.footer_img {
+    width: 60px;
+}
+.footer_text {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media (min-width: 870px){
+
+    .achievements_block {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .card {
+        max-width: 250px;
+    }
+} 
+@media (max-width: 870px){
+
+    .achievements_block {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+  .card {
+    max-width: 250px;
+  }
+}
+@media (max-width: 570px){
+    .menu{
+        display: none;
+    }
+}
